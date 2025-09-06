@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>ArchFolio — Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrapCss/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-light" data-bs-spy="scroll" data-bs-target="#navbarMain" data-bs-offset="100" tabindex="0">
+    <!-- navbar section -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-4 shadow-lg fixed-top" id="navbarMain">
+        <div class="container d-flex  justify-content-between">
+            <a class="navbar-brand fs-3" href="#home">ArchFolio.</a>
+            <div class="ms-auto">
+                <ul class="navbar-nav mb-2 mb-lg-0 d-lg-flex d-none">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item ms-0">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item ms-0">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item ms-0">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item ms-0">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- navbar-toggler section -->
+            <div class="d-flex d-lg-none">
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- offcanvas section -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header bg-dark text-white p-4">
+            <h5 class="offcanvas-title " id="offcanvasNavbarLabel">ArchFolio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body bg-dark d-flex flex-column ">
+            <div>
+                <ul class="navbar-nav mb-2 mb-lg-0 d-lg-none d-flex text-white mx-2 my-0 fs-5 ">
+                    <li><a class="nav-link d-block rounded d-block px-3" href="#home">Home</a></li>
+                    <li><a class="nav-link d-block rounded d-block px-3" href="#about">About</a></li>
+                    <li><a class="nav-link d-block rounded d-block px-3" href="#portfolio">Portfolio</a></li>
+                    <li><a class="nav-link d-block rounded d-block px-3" href="#services">Services</a></li>
+                    <li><a class="nav-link d-block rounded d-block px-3" href="#contact">ContactInfo</a></li>
+                </ul>
+            </div>
+            <!-- accordion section -->
+            <div class="accordion mt-auto opacity-75" id="accordionFlushExample">
+                <div class="accordion-item bg-dark text-light ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
+                            aria-controls="flush-collapseOne">
+                            ContactNow
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse "
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <a class="dropdown-item" href="tel:+201156741997">📞 +201156741997</a>
+                            <a class="dropdown-item" href="mailto:Mahmoud.talaat605@gmail.com">✉️
+                                Mahmoud.talaat605@gmail.com</a>
+                            <a class="dropdown-item" href="https://www.linkedin.com/in/mahmoud-talaat-319515321">🔗
+                                www.linkedin.com/in/mahmoud-talaat605</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="herosection d-flex align-items-center" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-start text-white">
+                    <!-- Hero Title -->
+                    <h1 class="fw-semibold text-uppercase lh-sm display-3 mb-4">
+                        Mustafa Talaat <br> Architecture
+                    </h1>
+
+                    <!-- Hero Button -->
+                    <a href="#portfolio" class="btn btn-link ps-5 text-white text-uppercase fw-normal hero-btn">
+                        View Portfolio <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="about-section bg-white" id="about">
+        <div class="container">
+            <div class="row gx-5 align-items-start">
+                <!-- LEFT: title + image -->
+                <div class="col-lg-6">
+                    <!-- label + big heading -->
+                    <div class="mb-4 ps-4">
+                        <span class="about-subtitle text-dark fw-bold opacity-75">Who am I</span>
+                        <h2 class="about-title">About Me</h2>
+                    </div>
+                    <div class="carousel1 container-md card bg-transparent shadow-lg p-0 border-0">
+                        <!-- controling the size and style of the carousel -->
+                        <div id="carouselExampleFade" class="carousel slide carousel-fade rounded-4 ">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/cat1x.png" class="d-block w-100 " alt="profile picture">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cat2x.png" class="d-block w-100" alt="profile picture">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/cat3x.png" class="d-block w-100" alt="profile picture">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev border-0" type="button"
+                                data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT: paragraphs + CTA (vertically aligned with top of image) -->
+                <div class="col-lg-6 pt-5">
+                    <div class="about-copy pt-4">
+                        <p class="fs-5 fw-normal my-5">I'm an architect graduated from the faculty of
+                            engineering,
+                            Alexandria University, Architecture departement.
+                            My experience exceeds exterior and facade designing to interior designing, shop drawing and
+                            working
+                            details.
+                        </p>
+                        <p class="fs-5 fw-normal my-5">
+                            I'm both skilled and talented with BIM technologies to the extent that I can adapt to any
+                            challenge
+                            and get the job perfectly done.
+                        </p>
+                        <p class="fs-5 fw-normal my-5">
+                            I am passionate about creating functional and aesthetically pleasing spaces that enhance the
+                            quality of life for those who use them. My goal is to continue growing as an architect and
+                            contribute to the development of innovative and sustainable design solutions.
+                        </p>
+                        <a class="btn btn-dark fs-6 " href="#portfolio" role="button">VIEW MY PORTFOLIO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container my-5">
+        <h2 class="mb-4 text-center bg-dark rounded py-4 w-75 mx-auto shadow-lg text-light">Skills</h2>
+
+        <div class="accordion" id="skillsAccordion">
+
+            <!-- Skill 1 -->
+            <div class="accordion-item bg-dark text-light border-0 rounded shadow mb-3">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button bg-dark text-light shadow-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        Design & Drafting
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Strong expertise in AutoCAD, Revit, and SketchUp. Specializing in precise shop drawings and
+                        working details.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 2 -->
+            <div class="accordion-item bg-dark text-light border-0 rounded shadow mb-3">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed bg-dark text-light shadow-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        Project Management
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Skilled in coordinating multi-disciplinary teams, managing timelines, and delivering quality
+                        results on time.
+                    </div>
+                </div>
+            </div>
+
+            <!-- Skill 3 -->
+            <div class="accordion-item bg-dark text-light border-0 rounded shadow mb-3">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed bg-dark text-light shadow-none" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                        Software Proficiency
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#skillsAccordion">
+                    <div class="accordion-body">
+                        Advanced knowledge in AutoCAD, Revit, 3ds Max, Adobe Photoshop, and MS Project.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!-- PORTFOLIO: use Bootstrap tabs/pills so show/hide is native -->
+    <section id="portfolio" class="container py-5 text-center">
+        <h2 class="mb-4">Portfolio</h2>
+
+        <!-- PILL NAV: use data-bs-toggle="pill" and data-bs-target to let Bootstrap manage active pane -->
+        <ul class="nav nav-pills mb-4 justify-content-center" id="portfolioCats" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pill-design" data-bs-toggle="pill" data-bs-target="#pane-design"
+                    type="button" role="tab" aria-controls="pane-design" aria-selected="true">Design</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pill-exterior" data-bs-toggle="pill" data-bs-target="#pane-exterior"
+                    type="button" role="tab" aria-controls="pane-exterior" aria-selected="false">Exterior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pill-interior" data-bs-toggle="pill" data-bs-target="#pane-interior"
+                    type="button" role="tab" aria-controls="pane-interior" aria-selected="false">Interior</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pill-shopdrawing" data-bs-toggle="pill" data-bs-target="#pane-shopdrawing"
+                    type="button" role="tab" aria-controls="pane-shopdrawing" aria-selected="false">Shopdrawing</button>
+            </li>
+        </ul>
+
+        <!-- TAB PANES: each category has its own pane with4 project thumbnails -->
+        <div class="tab-content">
+            <!-- DESIGN pane -->
+            <div class="tab-pane fade show active" id="pane-design" role="tabpanel" aria-labelledby="pill-design">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <!-- design project 0 -->
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="design" data-index="0" tabindex="0">
+                            <!-- THUMBNAIL:thumbnail file for design-1 here -->
+                            <img src="https://i.postimg.cc/Vsn7qrH3/design-1.png" alt="Design 1 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Design — Project 1</div>
+                    </div>
+                    <!-- design project 1 -->
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="design" data-index="1" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for design-2 here -->
+                            <img src="https://i.postimg.cc/yYTv5qKj/design-2.png" alt="Design 2 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Design — Project 2</div>
+                    </div>
+                    <!-- design project 2 -->
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="design" data-index="2" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for design-3 here -->
+                            <img src="https://i.postimg.cc/CxF6Lh79/design-3.png" alt="Design 3 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Design — Project 3</div>
+                    </div>
+                    <!-- design project 3 -->
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="design" data-index="3" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for design-4 here -->
+                            <img src="https://i.postimg.cc/TPK0ppDN/design-5.png" alt="Design 4 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Design — Project 4</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- EXTERIOR pane -->
+            <div class="tab-pane fade" id="pane-exterior" role="tabpanel" aria-labelledby="pill-exterior">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="exterior" data-index="0" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for exterior-1 here -->
+                            <img src="images/exterior-1.jpg" alt="Exterior 1 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Exterior — Project 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="exterior" data-index="1" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for exterior-2 here -->
+                            <img src="https://i.postimg.cc/cJzDmQWN/design-4.png" alt="Exterior 2 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Exterior — Project 2</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="exterior" data-index="2" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for exterior-3 here -->
+                            <img src="https://i.postimg.cc/NfPrLbkY/exterior3.png" alt="Exterior 3 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Exterior — Project 3</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="exterior" data-index="3" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for exterior-4 here -->
+                            <img src="https://i.postimg.cc/j5KDB1t6/exterior4.png" alt="Exterior 4 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Exterior — Project 4</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- INTERIOR pane -->
+            <div class="tab-pane fade" id="pane-interior" role="tabpanel" aria-labelledby="pill-interior">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="interior" data-index="0" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for interior-1 here -->
+                            <img src="images/interior-1-thumb.jpg" alt="Interior 1 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Interior — Project 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="interior" data-index="1" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for interior-2 here -->
+                            <img src="images/interior-2-thumb.jpg" alt="Interior 2 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Interior — Project 2</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="interior" data-index="2" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for interior-3 here -->
+                            <img src="images/interior-3-thumb.jpg" alt="Interior 3 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Interior — Project 3</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="interior" data-index="3" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for interior-4 here -->
+                            <img src="images/interior-4-thumb.jpg" alt="Interior 4 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Interior — Project 4</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SHOPDRAWING pane -->
+            <div class="tab-pane fade" id="pane-shopdrawing" role="tabpanel" aria-labelledby="pill-shopdrawing">
+                <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="shopdrawing" data-index="0" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for shopdrawing-1 here -->
+                            <img src="images/shopdrawing-1-thumb.jpg" alt="Shopdrawing 1 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Shopdrawing — Project 1</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="shopdrawing" data-index="1" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for shopdrawing-2 here -->
+                            <img src="images/shopdrawing-2-thumb.jpg" alt="Shopdrawing 2 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Shopdrawing — Project 2</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="shopdrawing" data-index="2" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for shopdrawing-3 here -->
+                            <img src="images/shopdrawing-3-thumb.jpg" alt="Shopdrawing 3 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Shopdrawing — Project 3</div>
+                    </div>
+                    <div class="col">
+                        <div class="portfolio-thumb" role="button" data-cat="shopdrawing" data-index="3" tabindex="0">
+                            <!-- THUMBNAIL: put thumbnail file for shopdrawing-4 here -->
+                            <img src="images/shopdrawing-4-thumb.jpg" alt="Shopdrawing 4 thumbnail">
+                        </div>
+                        <div class="thumb-caption">Shopdrawing — Project 4</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SINGLE MODAL + CAROUSEL -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content bg-dark text-light border-0">
+                <div class="modal-header border-0">
+                    <h5 class="modal-title" id="portfolioModalLabel">Gallery</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div id="portfolioCarousel" class="carousel slide" data-bs-ride="false">
+                        <div class="carousel-inner" id="portfolioCarouselInner"></div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0">
+                    <small id="portfolioModalCounter" class="text-muted"></small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="portfolio-videos" class="py-5 bg-dark text-white">
+        <div class="container">
+            <!-- Elegant Header -->
+            <div class="row mb-4">
+                <div class="col text-center">
+                    <small class="text-uppercase text-secondary fw-semibold">— Portfolio</small>
+                    <h2 class="fw-bold display-6">Featured Videos</h2>
+                    <p class="text-muted">A selection of my recent work in motion</p>
+                </div>
+            </div>
+
+            <!-- Bootstrap Carousel Videos -->
+            <div id="videoCarousel" class="carousel slide carousel-fade shadow-lg rounded-3 overflow-hidden"
+                data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- First Video -->
+                    <div class="carousel-item active">
+                        <div class="ratio ratio-16x9">
+                            <!-- Embed from YouTube -->
+                            <iframe src="https://drive.google.com/file/d/1iclQTSlPrUwuQb72g5O_mYcuXUrlNkJx/preview"
+                                title="YouTube video"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                    <!-- Second Video -->
+                    <div class="carousel-item">
+                        <div class="ratio ratio-16x9">
+                            <!-- Embed from Vimeo -->
+                            <iframe src="https://drive.google.com/file/d/1WkvRcbMSgkiz1BJumNImsLIJ_eB3sLFG/preview"
+                                title="Vimeo video" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+                            </iframe>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#videoCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#videoCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+
+    <!--services section -->
+    <div class="services container-fluid bg-secondary p-5" id="services">
+        <div class="container mg-0 bg-transparent">
+            <div class="row justify-content-center g-5">
+                <h2 class="mb-4 text-center bg-dark rounded py-4 w-75 shadow-lg">Services</h2>
+                <div class="col-2  col-sm-6">
+                    <div class="card shadow-1-strong  bg-dark text-light border-0">
+                        <img src="images/designbackground1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>🏗 BIM & Shop Drawings</h5>
+                            <h6 class="card-text">We provide precise Building Information Modeling (BIM)
+                                and shop drawings that ensure your project moves from design to execution
+                                seamlessly.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2  col-sm-6">
+                    <div class="card shadow-1-strong  bg-dark text-light border-0">
+                        <img src="images/shopdrawingbg3.png" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5>🏛 Architectural Consulting</h5>
+                            <h6 class="card-text">Beyond drawings, we provide expert consulting services,
+                                offering professional insight throughout the entire project lifecycle.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-6">
+                    <div class="card shadow-1-strong  bg-dark text-light border-0">
+                        <img src="images/shopdrawingbg2.png" class="card-img-top" alt="...">
+                        <div class="card-body ">
+                            <h5>📐 Plans & Design Development</h5>
+                            <h6 class="card-text">I craft thoughtful and functional architectural plans,
+                                balancing aesthetics with efficiency.
+                                From residential to commercial projects</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-6">
+                    <div class="card shadow-1-strong  bg-dark text-light border-0">
+                        <img src="images/bimbackground4.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5>🎨 3D Modeling & Visualization</h5>
+                            <h6 class="card-text">With advanced 3D modeling, we bring your ideas to life.
+                                High-quality visualizations allow you to explore every angle, and refine design
+                                choices</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="contactinfo container my-5 bg-dark px-5 rounded-3 border-0 py-5" id="contact">
+        <div class="container p-5">
+            <div class="row justify-content-center bg-dark shadow-lg border-0 text-white py-5 ">
+                <div class="col-5 ">
+                    <div class="card bg-dark shadow-lg border-0 text-white">
+                        <div class="card-body opacity-75">
+                            <p class="fs-5">
+                                If you are interested in learning more about my work, discussing a potential
+                                project, or
+                                have any
+                                questions
+                                or comments, please feel free to contact me using the following information:
+                            </p>
+                            <p class="fs-5">
+                                📞 Tel.: +201156741997<br>
+                                ✉️ Email: Mahmoud.talaat605@gmail.com<br>
+                                🔗 www.linkedin.com/in/mahmoud-talaat605
+                            </p>
+                            <p class="fs-5">
+                                I look forward to hearing from you and the opportunity to collaborate on your
+                                next
+                                project.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card bg-dark shadow-lg border-0 text-white">
+                        <div class="card-body">
+                            <h3>Contact Me</h3>
+                            <h6>leave me a message and i'll respond as soon as i can</h6>
+                            <form class="">
+                                <div class="input-group mt-3">
+                                    <span class="input-group-text fw-bold opacity-75">First and last name</span>
+                                    <input type="text" aria-label="First name" class="form-control">
+                                    <input type="text" aria-label="Last name" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label">Email
+                                        address</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                                        placeholder="name@example.com">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label">Your
+                                        Message</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-center align-items-center p-2 mt-5 bg-dark text-white">
+                <div class="bg-blue d-flex flex-column justify-content-center align-items-center mb-0 ">
+                    <p class="fs-2 mt-3 fw-light">Contact Me Today</p>
+                    <a class="contact-link d-block " href="tel:+201156741997">📞 +201156741997</a>
+                    <a class="contact-link d-block " href="mailto:Mahmoud.talaat605@gmail.com">✉️
+                        Mahmoud.talaat605@gmail.com</a>
+                    <a class="contact-link d-block " href="https://www.linkedin.com/in/mahmoud-talaat-319515321">🔗
+                        www.linkedin.com/in/mahmoud-talaat605</a>
+                    <h5 class="fs-6 fw-normal text-center opacity-75 mt-1">⏰ Available 8AM - 7PM Daily</h5>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.js"></script>
+
+    <script src="js/myjs.js"></script>
+
+</body>
+
+</html>
